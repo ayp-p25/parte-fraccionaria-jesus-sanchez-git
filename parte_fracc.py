@@ -9,8 +9,11 @@
 """
 
 A = float(input("Ingrese el numero que desee saber si posee decimales : \n"))
-B = round(A)
-if (A%B)== 0 :
-    print("No tiene decimales")
-else :
-    print("Si tiene decimales")
+if A != 0:
+    B = round(A)
+    if (A%B)== 0  :
+        print("No posee decimales")
+    elif (A%B)!= 0:
+        print("Si posee decimales")
+else:
+    print("No posee decimales")
